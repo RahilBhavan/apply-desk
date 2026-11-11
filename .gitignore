@@ -2,6 +2,7 @@
 **/build/
 **/*.egg-info/
 .venv/
+.build-venv/
 dist/
 runtime/
 member/

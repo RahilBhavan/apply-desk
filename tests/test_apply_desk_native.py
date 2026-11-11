@@ -86,6 +86,17 @@ if __name__ == '__main__':
     unittest.main()
 
 class ReleaseRegressionTests(unittest.TestCase):
+    def test_member_school_does_not_inherit_a_personal_campus_alias(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            member = Workspace.create_pdf(root / 'member', {'school': 'University of Michigan'}, b'%PDF-1.4\nfictional')
+            member.import_jobs('company,title,apply_url\nPublic,Intern,https://jobs.example.com/job/123\n')
+            job = member.list_jobs()['jobs'][0]['id']
+            host = MemberHost({'workspace': str(member.root), 'allowed_origin': ORIGIN, 'state': str(root / 'state')}, ORIGIN)
+            packet = host.handle({'id': 'campus', 'op': 'packet', 'role_id': job, 'standing': True})
+            self.assertEqual(next(field['answer'] for field in packet['fields'] if field['label'] == 'School'), 'University of Michigan')
+            self.assertTrue(all('aliases' not in field for field in packet['fields']))
+
     def test_personalized_urls_never_enter_public_export_and_review_is_bound(self):
         with tempfile.TemporaryDirectory() as temporary:
             root=Path(temporary); pdf=root/'resume.pdf';pdf.write_bytes(b'%PDF-1.4\nfictional')

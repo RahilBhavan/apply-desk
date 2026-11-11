@@ -77,7 +77,7 @@ def packet(folder, role, state=None, *, wire_role_id=None, system_context=None, 
         fields.append({'label': source['label'], 'type': source.get('type', 'text'),
                        'options': source.get('options') or [], 'required': bool(source.get('required')),
                        'answer': answer, 'who': who, 'verified': bool(verified), 'basis': basis})
-        if standing and verified and ALIASES.get(norm(answer)):
+        if standing and not member_mode and verified and ALIASES.get(norm(answer)):
             # Approved spellings of the same place or school. The page still picks only an exact listed option.
             fields[-1]['aliases'] = ALIASES[norm(answer)]
         if 'step_id' in source:

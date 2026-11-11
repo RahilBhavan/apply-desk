@@ -1,0 +1,47 @@
+name: Build Apple Silicon Mac app
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Install pinned portable arm64 Python
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(uname -m)" = arm64
+          mkdir -p "$RUNNER_TEMP/apply-desk-python"
+          curl --fail --location 'https://github.com/astral-sh/python-build-standalone/releases/download/20261110/cpython-3.13.18%2B20261110-aarch64-apple-darwin-install_only_stripped.tar.gz' -o "$RUNNER_TEMP/apply-desk-python/runtime.tar.gz"
+          printf '%s  %s\n' '7a2384641584ab9984221fcb0fc9265df465922af71be71410529e2a9c3f0540' "$RUNNER_TEMP/apply-desk-python/runtime.tar.gz" | shasum -a 256 -c -
+          tar -xzf "$RUNNER_TEMP/apply-desk-python/runtime.tar.gz" -C "$RUNNER_TEMP/apply-desk-python"
+          "$RUNNER_TEMP/apply-desk-python/python/bin/python3" -m venv .build-venv
+          .build-venv/bin/python -m pip install '.[t3]' 'pyinstaller==6.22.3'
+      - name: Build and verify signed bundle and disk image
+        run: .build-venv/bin/python apply_desk/build_macos.py --output "$RUNNER_TEMP/apply-desk-build"
+      - name: Exercise frozen HTTP, native messaging and real MCP client
+        run: .build-venv/bin/python tests/frozen_mac_smoke.py "$RUNNER_TEMP/apply-desk-build/Apply Desk.app/Contents/MacOS/ApplyDesk" > "$RUNNER_TEMP/apply-desk-build/frozen-verification.json"
+      - name: Verify disk image and record checksums
+        run: |
+          set -euo pipefail
+          hdiutil verify "$RUNNER_TEMP/apply-desk-build/Apply-Desk-0.2.0.dmg"
+          shasum -a 256 "$RUNNER_TEMP/apply-desk-build/Apply-Desk-0.2.0.dmg" > "$RUNNER_TEMP/apply-desk-build/SHA256SUMS.txt"
+          sw_vers > "$RUNNER_TEMP/apply-desk-build/tested-macos.txt"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: apply-desk-mac-arm64
+          path: |
+            ${{ runner.temp }}/apply-desk-build/Apply-Desk-0.2.0.dmg
+            ${{ runner.temp }}/apply-desk-build/build-validation.json
+            ${{ runner.temp }}/apply-desk-build/frozen-verification.json
+            ${{ runner.temp }}/apply-desk-build/SHA256SUMS.txt
+            ${{ runner.temp }}/apply-desk-build/tested-macos.txt
+            ${{ runner.temp }}/apply-desk-build/READ ME FIRST.txt
+            ${{ runner.temp }}/apply-desk-build/THIRD_PARTY_LICENSES.txt
+          if-no-files-found: error
+          retention-days: 14

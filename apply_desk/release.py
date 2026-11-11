@@ -48,6 +48,8 @@ def assemble(destination, repo=None):
         copy(own / name if (own / name).is_file() else repo / name, destination / name)
     workflow = own / 'ci.yml' if (own / 'ci.yml').is_file() else repo / '.github/workflows/ci.yml'
     copy(workflow, destination / '.github/workflows/ci.yml')
+    mac_workflow = own / 'macos-release.yml' if (own / 'macos-release.yml').is_file() else repo / '.github/workflows/macos-release.yml'
+    copy(mac_workflow, destination / '.github/workflows/macos-release.yml')
     copy(own / 'README.md', destination / 'README.md')
     copy(own / 'LICENSE', destination / 'LICENSE')
     project = (own / 'pyproject.toml').read_text().replace('package-dir = {apply_desk = "."}', 'package-dir = {apply_desk = "apply_desk"}')
@@ -96,9 +98,9 @@ def assemble(destination, repo=None):
 
 Use fictional data for verification. Keep profiles, PDFs, credentials and browser sessions out of Git. Preserve exact packet identity and interrupted-action journals. Confirmed facts, resume source text, model drafts and member approval are separate. The connector cannot confirm or submit. Mac releases are Apple Silicon only and must pass native minimum-OS/signature checks. Read README and CONTRIBUTING before changes; run the documented behavior checks. Never test by sending a live application.
 ''')
-    (destination / '.gitignore').write_text('**/__pycache__/\n**/build/\n**/*.egg-info/\n.venv/\ndist/\nruntime/\nmember/\nexports/\n*.pdf\n*.sqlite*\n.mcp.json\n.codex/config.toml\nnative-config.json\n.DS_Store\n')
+    (destination / '.gitignore').write_text('**/__pycache__/\n**/build/\n**/*.egg-info/\n.venv/\n.build-venv/\ndist/\nruntime/\nmember/\nexports/\n*.pdf\n*.sqlite*\n.mcp.json\n.codex/config.toml\nnative-config.json\n.DS_Store\n')
     for name in ('test_apply_desk_workspace.py', 'test_apply_desk_mcp.py', 'test_apply_desk_web.py',
-                 'test_apply_desk_club_browser.py', 'test_apply_desk_engine_browser.py', 'test_apply_desk_updates.py', 'test_apply_desk_native.py', 'test_apply_desk_setup.py'):
+                 'frozen_mac_smoke.py', 'test_apply_desk_club_browser.py', 'test_apply_desk_engine_browser.py', 'test_apply_desk_updates.py', 'test_apply_desk_native.py', 'test_apply_desk_setup.py'):
         source = repo / 'tests' / name
         if source.exists():
             copy(source, destination / 'tests' / name)

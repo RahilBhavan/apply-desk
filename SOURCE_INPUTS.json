@@ -49,7 +49,7 @@
   },
   {
     "source": "apply_desk/release.py",
-    "sha256": "e3ea1eecb4a3bf6e1a718aa66126993d242055bfa2f2e0a75cc0a9f5ae6345c3"
+    "sha256": "e68153ceea43e49a3402ec8bbe40f95ef44d91a5109f95673000c5f1bcade2e1"
   },
   {
     "source": "apply_desk/resume.py",
@@ -108,6 +108,10 @@
     "sha256": "aab716a681155ed2eb8829ce6cd36f5c21f93a126c5bafb4fb6b01973e90f1a5"
   },
   {
+    "source": "apply_desk/macos-release.yml",
+    "sha256": "ace2f7ae8cdf437799ee60945b16bd816f7a5ecad6330db28dfb687061c475d7"
+  },
+  {
     "source": "apply_desk/README.md",
     "sha256": "617eb687d40a4a6e26ad7019dc5e6bd43a3b52efa50a526c80d02af03c7f2e4d"
   },
@@ -117,7 +121,7 @@
   },
   {
     "source": "apply_desk/web/index.html",
-    "sha256": "5dd915629e97321ceb9c9157d9d9ce0faa4f8f3f6ae32a711281de2b350acc6c"
+    "sha256": "506f88dda61e46e0e9db848a87680a6d328dc6e7be2bc71429402a3809e34e95"
   },
   {
     "source": "apply_desk/web/app.js",
@@ -153,7 +157,7 @@
   },
   {
     "source": "internship_applier/extension/host.py",
-    "sha256": "36df6a0d3cc31516bed6c61930ad3bab4b7f1f110ad5c38dea6e81de0a0cbaa4"
+    "sha256": "c4ec4d69b554729e0d46f6c1ffc2385e7f49623e09aaa7020ab1fb3b583a0cfe"
   },
   {
     "source": "internship_applier/extension/observations.py",
@@ -300,6 +304,10 @@
     "sha256": "124fc5925daa8be0ae5b6c03a713975ffcdeaa85315ce1e626fcec842b041f38"
   },
   {
+    "source": "tests/frozen_mac_smoke.py",
+    "sha256": "62d4f8687a36f9957a6f30e1f05529617ddce56577bd222c855e03dfc45c6d78"
+  },
+  {
     "source": "tests/test_apply_desk_club_browser.py",
     "sha256": "d0d3484163b6ed4a6d8012722bbf5ac9f9110943f95b9ee8dbe968e9125d1aad"
   },
@@ -313,7 +321,7 @@
   },
   {
     "source": "tests/test_apply_desk_native.py",
-    "sha256": "0287dde78031736dbff6d5fd459de5d8de70a57adeb77296219649a3ce875056"
+    "sha256": "c45106968a94ba21d3e0e61bffff4bf997163b50fdc7ecebec358d4751aa2cf8"
   },
   {
     "source": "tests/test_apply_desk_setup.py",
