@@ -1,0 +1,4 @@
+Orbit fonts subset from hub/web/fonts/DMSans.ttf and BarlowCondensed-Bold.ttf.
+DM Sans uses the original weight 400 instance, ASCII and general punctuation.
+Barlow Condensed Bold uses Latin-1 and general punctuation. Other characters use sans-serif fallback.
+Subset with fontTools pyftsubset and WOFF2 compression. Original OFL licenses included.

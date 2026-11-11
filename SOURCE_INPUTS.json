@@ -1,0 +1,322 @@
+[
+  {
+    "source": "apply_desk/__init__.py",
+    "sha256": "022af628c8bc8d4991a047ba86cca3d582d6c0e3b801fa12fda74a2cceda8188"
+  },
+  {
+    "source": "apply_desk/__main__.py",
+    "sha256": "1a14e7fe333634feb5767052365e725510d20a7f6bece2d9542d0661d8590145"
+  },
+  {
+    "source": "apply_desk/batch.py",
+    "sha256": "fce9a6ab6b8867e72a7eea623199b032c8434d7a4bf148d7215da8fdb14a068f"
+  },
+  {
+    "source": "apply_desk/build_macos.py",
+    "sha256": "568c4f62857761f38a36250eb52d29a2c0002fe386e3182fc273680750c72269"
+  },
+  {
+    "source": "apply_desk/build_support.py",
+    "sha256": "730ec54f10366773001ba888813bf5cb7a91c3efe567ebf5eca0d5c098da5ae7"
+  },
+  {
+    "source": "apply_desk/desktop_entry.py",
+    "sha256": "fc3b84371578cdd25ebcb3fa686bbc6e9a29c05c62572c55762bc100c9b62a49"
+  },
+  {
+    "source": "apply_desk/engine.py",
+    "sha256": "e4b840a6d01b7452b80aadbe33461f3db5e17a33346465cbec21e3b67603482f"
+  },
+  {
+    "source": "apply_desk/integration.py",
+    "sha256": "f0b6ffb48f0838114301db7fef25b90207dd88931bc1af426d7886989fd56d8b"
+  },
+  {
+    "source": "apply_desk/launch.py",
+    "sha256": "370cadef6e300964e6ce165664d732c7dcb0431241df735998449d8426d8a771"
+  },
+  {
+    "source": "apply_desk/mac_actions.py",
+    "sha256": "e61a7ae6ada7404c4694fd695fd3e54f87ba794aa3188b99e185771260292acf"
+  },
+  {
+    "source": "apply_desk/mcp_server.py",
+    "sha256": "9027412976d431d5de9cc3812ef1653c24bb77a639894d79522c6ddf65e271db"
+  },
+  {
+    "source": "apply_desk/native_host.py",
+    "sha256": "ea8539ad790fbec95ea2314aeb035f7e992efd2b32d0048f85d03a3422fd97c1"
+  },
+  {
+    "source": "apply_desk/release.py",
+    "sha256": "0480a73df7abf9c40c8c547d12b9106c647e2a5e760632b18639a91d61b213ab"
+  },
+  {
+    "source": "apply_desk/resume.py",
+    "sha256": "c6962b2130f5425fdcbd1360f32c4c76c65d53056c89857bcc3e97eb7b4eb861"
+  },
+  {
+    "source": "apply_desk/runtime.py",
+    "sha256": "b119f02401f9b01fcb73ebaf95e4b059fc6eaa83e59bc6ffe2336b05370172a5"
+  },
+  {
+    "source": "apply_desk/sharing.py",
+    "sha256": "7527dc42a15d56e3722e711f9f5b8165f770f3d90701411d091844e6605bc508"
+  },
+  {
+    "source": "apply_desk/storage.py",
+    "sha256": "5cf19544c9c54b6d4b35ba427e0bee4589d41644db54a086c00ac116d14f6f93"
+  },
+  {
+    "source": "apply_desk/validation.py",
+    "sha256": "627411168792c518d2f48f38ef9f86ba9b055fce9fc58e222756a5e9af7934b8"
+  },
+  {
+    "source": "apply_desk/web_server.py",
+    "sha256": "fa9fc996ee5147244c46a75766f8ac647cf7660bac2063c8c43e7f3e1e69d6f9"
+  },
+  {
+    "source": "apply_desk/workspace.py",
+    "sha256": "3ab34ab1a70c7e549d984c01ad267bdfaa3a6a7db8ff07f4aa4cbe36a3bc6e81"
+  },
+  {
+    "source": "apply_desk/pyproject.toml",
+    "sha256": "83ff5df7680d92374bdf69d9770f6f299f0c62482d63a7dbcd26f15dcf1f455a"
+  },
+  {
+    "source": "apply_desk/README.md",
+    "sha256": "617eb687d40a4a6e26ad7019dc5e6bd43a3b52efa50a526c80d02af03c7f2e4d"
+  },
+  {
+    "source": "apply_desk/LICENSE",
+    "sha256": "077ccd73888024da99e17cf90b7a63ea07b79ad29c6930318ad57a775d4fb587"
+  },
+  {
+    "source": "apply_desk/extension-key.txt",
+    "sha256": "e2f788e6ffdb7be29dd85a5e5556ce8575d0daef4240016d37d8f8784187f87f"
+  },
+  {
+    "source": "apply_desk/CONTRIBUTING.md",
+    "sha256": "8367c0fb5d38271f6b03af97be727b1b3ec01370b3d4e723841e1aca10f14c0a"
+  },
+  {
+    "source": "apply_desk/PRIVACY.md",
+    "sha256": "40f9c5732fdecce0edae590d3ae83e1c50d098a9c0f83e4a08f37e200d6dd549"
+  },
+  {
+    "source": "apply_desk/ci.yml",
+    "sha256": "aab716a681155ed2eb8829ce6cd36f5c21f93a126c5bafb4fb6b01973e90f1a5"
+  },
+  {
+    "source": "apply_desk/README.md",
+    "sha256": "617eb687d40a4a6e26ad7019dc5e6bd43a3b52efa50a526c80d02af03c7f2e4d"
+  },
+  {
+    "source": "apply_desk/LICENSE",
+    "sha256": "077ccd73888024da99e17cf90b7a63ea07b79ad29c6930318ad57a775d4fb587"
+  },
+  {
+    "source": "apply_desk/web/index.html",
+    "sha256": "5dd915629e97321ceb9c9157d9d9ce0faa4f8f3f6ae32a711281de2b350acc6c"
+  },
+  {
+    "source": "apply_desk/web/app.js",
+    "sha256": "5d41afd228104672ff1e269b7d76fa508f900bd4a6360e0464082cac734bb6fd"
+  },
+  {
+    "source": "apply_desk/web/style.css",
+    "sha256": "8eaa5d367d931e15912aaf0bda2c77dddd5c09f14777601b9731c36060fa8ce9"
+  },
+  {
+    "source": "apply_desk/examples/profile.json",
+    "sha256": "a8f86bfbe55cda7d16abbd58468814b6c1a95fb8283c8831ff9ade5810880923"
+  },
+  {
+    "source": "apply_desk/examples/club-jobs.csv",
+    "sha256": "a9641c5ef774fc8c6797e6e93c38c2e71a230273044bbe504957f30f4595a102"
+  },
+  {
+    "source": "internship_applier/__init__.py",
+    "sha256": "17c08033f91a89c99cb338563ec1fbeab65e96a8a912bd42573ef13c449f7001"
+  },
+  {
+    "source": "internship_applier/common.py",
+    "sha256": "e76f68dbc037fc86648bdeef4d4e5d030acf0085810d1b0d9b26d451773ac9c2"
+  },
+  {
+    "source": "internship_applier/fields.py",
+    "sha256": "f6344c245ae26d309d8d63cf249f4348d56b6d6a7b444e029c324c1b31c59c12"
+  },
+  {
+    "source": "internship_applier/extension/__init__.py",
+    "sha256": "5ef843e2404261e28277ba0cd6fd5c4821acef7d3d2a58cf4961fd1a8d4e0343"
+  },
+  {
+    "source": "internship_applier/extension/host.py",
+    "sha256": "36df6a0d3cc31516bed6c61930ad3bab4b7f1f110ad5c38dea6e81de0a0cbaa4"
+  },
+  {
+    "source": "internship_applier/extension/observations.py",
+    "sha256": "b09758cd8e1be7f6534dfc6d55fa25956783547e9f2cfc5dea39c9dc047a2b3c"
+  },
+  {
+    "source": "internship_applier/extension/operations.py",
+    "sha256": "4a6b69231ee07c34ac641113a78e4767018b3ff4a01f54de33309e72ba0c79de"
+  },
+  {
+    "source": "internship_applier/extension/advice.py",
+    "sha256": "867172874b7ea6dce18e1c290eaed23d72231891345784b2a824e961cd33936f"
+  },
+  {
+    "source": "internship_applier/extension/metrics.py",
+    "sha256": "314c5cc92bb73c86938d6efa6a4c5369ebefca8e39b47a2233d6c94a1e336b2d"
+  },
+  {
+    "source": "internship_applier/extension/protocol.py",
+    "sha256": "90f2f0becc5ab5d6bf94477157b09d38db55f11ef17c1f175711c646be11b170"
+  },
+  {
+    "source": "internship_applier/extension/closed.py",
+    "sha256": "207495d3efa21884b800a0f87e04dfd8047b19be591a6861b1ee8e483427b982"
+  },
+  {
+    "source": "internship_applier/extension/schemas.py",
+    "sha256": "02c2989f25176935f4272af236b8ab9b39cebb062ddda2bf26dbcdd877c20949"
+  },
+  {
+    "source": "apply_desk.release:member-adapter/database.py",
+    "sha256": "3eb28b91dfc7a461965173bc8b7ccbdabafd13d71705c4ede7bbc6701298aeb1"
+  },
+  {
+    "source": "apply_desk.release:member-adapter/extension/standing.py",
+    "sha256": "896621473927b7675c28a5d8441c11365a6d3994cc229280081686be0a78cb35"
+  },
+  {
+    "source": "apply_desk.release:member-adapter/extension/answer_map.py",
+    "sha256": "b0ded7b36d7219107a81201f12715ff0e0abac5f1fce0938a4ea94b2f1c96196"
+  },
+  {
+    "source": "apply_desk.release:member-adapter/workday_accounts.py",
+    "sha256": "3c56d3f79db5b2642572dce8683de03e9c3b1b8814e1c8a926587770793cb1d0"
+  },
+  {
+    "source": "apply_desk.release:member-adapter/extension/workday_flow.py",
+    "sha256": "0d7e0b1ceef77f1c752f85452bf5e23a5941f091a73325fb1221374051ca4391"
+  },
+  {
+    "source": "apply_desk.release:member-adapter/extension/facts.py",
+    "sha256": "8c7a2bde666a156daba2387f942a1b4ada49a345b7c482ea4ae08fc912ba8af3"
+  },
+  {
+    "source": "internship_applier/extension/browser/manifest.json",
+    "sha256": "f0681ae4c70181ca28b750d6902ea77f3a55aa2fd294707efe60a639da3a4593"
+  },
+  {
+    "source": "internship_applier/extension/browser/worker.js",
+    "sha256": "4bed0eccf6771a3158220c9fc2b593f04b143fd27eb89b49741a950619a2f059"
+  },
+  {
+    "source": "internship_applier/extension/browser/worker-core.js",
+    "sha256": "394de627f3d6c1c8ee258c626d30fd0d4f4036ed20af81c4f6f03c853dd54179"
+  },
+  {
+    "source": "internship_applier/extension/browser/worker-actions.js",
+    "sha256": "1b01f0c61168f6ad33c628f8a3a07ecfb61fb7e36ce5aa921e84d6934b103fb3"
+  },
+  {
+    "source": "internship_applier/extension/browser/scanner.js",
+    "sha256": "8c29fe06856b1eeb87433aa5be4f865a73f388688b0e2bd905f8e29ad4a2a2a8"
+  },
+  {
+    "source": "internship_applier/extension/browser/controls.js",
+    "sha256": "040c3724cfb44e5d86702be9d5497d2317e900df8804ce005c18f8f5ec41d3bb"
+  },
+  {
+    "source": "internship_applier/extension/browser/page.js",
+    "sha256": "652d155e02894545be6020d70eedfcb3f67692b4f35dca90417916f986bf62c9"
+  },
+  {
+    "source": "internship_applier/extension/browser/popup.html",
+    "sha256": "9df7840ae829db2b0a17a496e9b23f1e0864de5d3f19273d300ebcf4320ce0c4"
+  },
+  {
+    "source": "internship_applier/extension/browser/review.html",
+    "sha256": "e3e574b9be086689e48c653f08c546eba6e8bfd5b715b7e9fb23bcc0f1dfe0b0"
+  },
+  {
+    "source": "internship_applier/extension/browser/review.css",
+    "sha256": "703e8eedc28a8e59b94138a4d89145b80eeb362aedc65b8acb3100894d5310ef"
+  },
+  {
+    "source": "internship_applier/extension/browser/review-ui.js",
+    "sha256": "fe605984d799e33c7ed9e098883e9c574fee32ea364bce3fb8a00a22ec1e0c49"
+  },
+  {
+    "source": "internship_applier/extension/browser/review-assistance.js",
+    "sha256": "66b3886fc339c2ac4d3124b132efa8f9c50b9f4530c497601f805e44246f6e9f"
+  },
+  {
+    "source": "internship_applier/extension/browser/review-timer.js",
+    "sha256": "a83d6d725d57e6a077ce40704696d66547f55122ab9ad0a4834b67b990e104e5"
+  },
+  {
+    "source": "internship_applier/extension/browser/review-system.js",
+    "sha256": "2595a633c07738390f13c6ee3f90e7add5cb98c76041cae86be35ee969b85d3f"
+  },
+  {
+    "source": "internship_applier/extension/browser/review.js",
+    "sha256": "626d2688ebc14d0e54556678c5d84d2e1d4cfc16efdb0347cfed4c70456b6540"
+  },
+  {
+    "source": "internship_applier/extension/browser/fonts/BarlowCondensed-Bold.woff2",
+    "sha256": "4296667ae565565f2c59919c8cf3deddddc3d329537c3151578f03f2df0fab6a"
+  },
+  {
+    "source": "internship_applier/extension/browser/fonts/BarlowCondensed-OFL.txt",
+    "sha256": "10b0e6bb43166a50fbe7cde2895bd7f703738a5da843acb5c97c95dc9ea26817"
+  },
+  {
+    "source": "internship_applier/extension/browser/fonts/DMSans.woff2",
+    "sha256": "dd3b5fdcce2ffa0654d82df7b4a058700f82a6b7052b15f1c36ac19553f1d2b8"
+  },
+  {
+    "source": "internship_applier/extension/browser/fonts/DMSans-OFL.txt",
+    "sha256": "7ec15e79c59bc14b86436a17e5eb7926b46cbcaeb08e1a7e6c110b415e6eb2a2"
+  },
+  {
+    "source": "internship_applier/extension/browser/fonts/SOURCE.txt",
+    "sha256": "dc3092f5bafa7a2f8701d563aaa9244c97188ccddc2aba0242960a0507a5b20e"
+  },
+  {
+    "source": "tests/test_apply_desk_workspace.py",
+    "sha256": "48ddcf25b62b2f1d748592391cf9caf9d830ac39904d27ddcbeffa5c57a0a3f8"
+  },
+  {
+    "source": "tests/test_apply_desk_mcp.py",
+    "sha256": "da8556921671badc923df28c18f667d12fbb823d84cb3f95e8e100e5a1ea7dbe"
+  },
+  {
+    "source": "tests/test_apply_desk_web.py",
+    "sha256": "124fc5925daa8be0ae5b6c03a713975ffcdeaa85315ce1e626fcec842b041f38"
+  },
+  {
+    "source": "tests/test_apply_desk_club_browser.py",
+    "sha256": "d0d3484163b6ed4a6d8012722bbf5ac9f9110943f95b9ee8dbe968e9125d1aad"
+  },
+  {
+    "source": "tests/test_apply_desk_engine_browser.py",
+    "sha256": "26879380fd053ad670a8c394df13644f5bbb9c93a32ba482d85754aa45fb785d"
+  },
+  {
+    "source": "tests/test_apply_desk_updates.py",
+    "sha256": "a9ffbf13d8ffd54b0eceaa7825d640400698d65970099ccdce3a647a12bef136"
+  },
+  {
+    "source": "tests/test_apply_desk_native.py",
+    "sha256": "0287dde78031736dbff6d5fd459de5d8de70a57adeb77296219649a3ce875056"
+  },
+  {
+    "source": "tests/test_apply_desk_setup.py",
+    "sha256": "5cbdc9d5e8a9c6d856cdb1d6ec4fc76733fb962f2d5967e2c0beae3d0ce623eb"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Apply Desk",
+  "version": "0.2.0",
+  "description": "Prepare applications from your private Apply Desk workspace.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "nativeMessaging"
+  ],
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Prepare application"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  },
+  "minimum_chrome_version": "106",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1Ig3nSaHGq0w0LVPBKoKmG17kbQMkiLhZCDT9ipp2MbLOI3WXzBTrzOl+FsW+h/mmk8tdQnjq15eZDW/Ee5FC0/Rp6+jQctoSV4sSPmQNp/Jl5s9zpob9EwLT9EgA/Ru/XKanhs5rsiA0ApUEKAhUxXldWODA526Y+DmzIWHR+OL+5wsx0/9VxQpdmsvhJx7HZKcpW+ogJDBMjke0wxgvsOMGBJLLIj7CoeFC4D3i6eIUMQOOTZ87t79Dl3ZrExptWSWNSlf0frLuvqbDrs5X9Aqv8bziEGQ5/1ZMJeBl+fwibvyyJm/Hn6io1vtPo2EXYUn6UeWihHwp7PXmusEWwIDAQAB"
+}
