@@ -59,7 +59,7 @@ def build(output):
     subprocess.run([sys.executable, '-m', 'PyInstaller', '--noconfirm', '--distpath', str(output / 'bin'),
                     '--workpath', str(output / 'work'), str(spec)], check=True)
     subprocess.run(['/usr/bin/ditto', str(output / 'bin/Apply Desk.app'), str(app)], check=True)
-    subprocess.run(['/usr/bin/lipo', '-verify_arch', 'arm64', str(app / 'Contents/MacOS/ApplyDesk')], check=True)
+    subprocess.run(['/usr/bin/lipo', str(app / 'Contents/MacOS/ApplyDesk'), '-verify_arch', 'arm64'], check=True)
     subprocess.run(['/usr/bin/codesign', '--verify', '--deep', '--strict', str(app)], check=True)
     validation = validate_macos(app)
     (output / 'build-validation.json').write_text(json.dumps(validation, indent=2))

@@ -9,7 +9,7 @@
   "apply_desk/__init__.py": "022af628c8bc8d4991a047ba86cca3d582d6c0e3b801fa12fda74a2cceda8188",
   "apply_desk/__main__.py": "1a14e7fe333634feb5767052365e725510d20a7f6bece2d9542d0661d8590145",
   "apply_desk/batch.py": "fce9a6ab6b8867e72a7eea623199b032c8434d7a4bf148d7215da8fdb14a068f",
-  "apply_desk/build_macos.py": "568c4f62857761f38a36250eb52d29a2c0002fe386e3182fc273680750c72269",
+  "apply_desk/build_macos.py": "479f9fb97ac44925628e373e98c130e49fc7f7ba3127553a1a5ea5ab067575d6",
   "apply_desk/build_support.py": "730ec54f10366773001ba888813bf5cb7a91c3efe567ebf5eca0d5c098da5ae7",
   "apply_desk/desktop_entry.py": "fc3b84371578cdd25ebcb3fa686bbc6e9a29c05c62572c55762bc100c9b62a49",
   "apply_desk/engine.py": "e4b840a6d01b7452b80aadbe33461f3db5e17a33346465cbec21e3b67603482f",

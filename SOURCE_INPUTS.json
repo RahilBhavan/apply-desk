@@ -13,7 +13,7 @@
   },
   {
     "source": "apply_desk/build_macos.py",
-    "sha256": "568c4f62857761f38a36250eb52d29a2c0002fe386e3182fc273680750c72269"
+    "sha256": "479f9fb97ac44925628e373e98c130e49fc7f7ba3127553a1a5ea5ab067575d6"
   },
   {
     "source": "apply_desk/build_support.py",
