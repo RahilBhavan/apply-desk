@@ -49,7 +49,7 @@
   },
   {
     "source": "apply_desk/release.py",
-    "sha256": "0480a73df7abf9c40c8c547d12b9106c647e2a5e760632b18639a91d61b213ab"
+    "sha256": "e3ea1eecb4a3bf6e1a718aa66126993d242055bfa2f2e0a75cc0a9f5ae6345c3"
   },
   {
     "source": "apply_desk/resume.py",

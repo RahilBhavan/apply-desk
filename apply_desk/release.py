@@ -67,11 +67,12 @@ def assemble(destination, repo=None):
     import tokenize
     host = destination / 'apply_desk/_engine/internship_applier/extension/host.py'
     tokens = tokenize.generate_tokens(io.StringIO(host.read_text()).readline)
-    sanitized = [(kind, '' if kind == tokenize.COMMENT and 'rahil' in value.casefold() else value)
-                 for kind, value, *_ in tokens]
-    text = tokenize.untokenize(sanitized)
+    sanitized = [token._replace(string='') if token.type == tokenize.COMMENT and 'rahil' in token.string.casefold() else token
+                 for token in tokens]
+    text = '\n'.join(line.rstrip() for line in tokenize.untokenize(sanitized).splitlines()) + '\n'
     # Personal grants are absent even for direct use of the bundled low-level Host.
-    text = text.replace("'data_consent':not member_mode", "'data_consent':False").replace("'truth_attestation':not member_mode", "'truth_attestation':False")
+    import re
+    text = re.sub(r"('data_consent'|'truth_attestation'):\s*not member_mode", r"\1: False", text)
     host.write_text(text)
     for relative in BROWSER:
         copy((repo / 'internship_applier/extension/browser' / relative if (repo / 'internship_applier').is_dir() else own / 'browser' / relative), destination / 'apply_desk/browser' / relative)
